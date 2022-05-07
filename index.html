@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./w3.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>PRUEBA Javascript </title>
+  </head>
+
+  <body>
+    <div class="w3-container w3-blue">
+      <h1><a style="text-decoration: none;"  >PUEBA TECTICA - SUPER</a></h1>      
+    </div>
+  <form class="id-container" onsubmit="event.preventDefault()">
+
+  <div>
+      <label>Nombre</label>
+    <input class="id-input" id="nombre" name="nombre" placeholder="Nombre" />
+  </div>
+
+    <div>
+      <label>Tipo de identificacion</label>
+    <select name="lista" id="tipo" size="1">
+      <option value="cedula">Cedula</option>
+      <option value="NIT">Numero NIT</option>
+      <option value="cedula extranjeria">CC-Extranjeria</option>
+      <option value="pasaporte">Pasaporte</option>
+      </select>
+    </div>
+    
+  <div>
+    <label>Numero de Identificacion</label>
+    <input class="id-input" id="N-identificacion" name="N-identificacion" placeholder="10000234" />
+  </div>
+
+  <div>
+    <label>Correo</label>
+    <input class="id-input" id="correo" name="correo" placeholder="super@gmail.com" />
+  </div>
+
+   <div>
+    <label>Fecha Nacimiento</label>
+    <input class="id-input" id="fecha" name="fecha" placeholder="DD-MM-AAA" />
+  </div>
+
+  <div>
+    <label>Direccion</label>
+    <input class="id-input" id="direccion" name="direccion" placeholder="calle 39 #22-10 - ciudad" />
+  </div>
+
+    <label>Edad</label>
+    <input class="id-input" id="edad" name="edad" placeholder="23" title="Edad" t />
+    
+    
+   
+    <br /><br />
+    <button class="id-button" onclick="clearForm()">Limpiar Formulario</button>
+    <button class="id-button" onclick="create()">Crear</button>
+    <button class="id-button" onclick="update()">Actualizar</button>
+    <button class="id-button" onclick="deleteItem()">Eliminar</button>
+    <br /><br />
+    <select id="panel" size="20" onclick="panelClick()"> </select>
+  </form>
+
+    <script src="index.js">
+    </script>
+
+  </body>
+</html>
